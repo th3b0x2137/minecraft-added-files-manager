@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minecraft-added-files-manager", "minecraft-added-files-manager\minecraft-added-files-manager.csproj", "{180F2D6F-E0B2-4827-ACA6-2E77E56340C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{180F2D6F-E0B2-4827-ACA6-2E77E56340C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180F2D6F-E0B2-4827-ACA6-2E77E56340C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180F2D6F-E0B2-4827-ACA6-2E77E56340C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180F2D6F-E0B2-4827-ACA6-2E77E56340C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE057802-3894-4734-9CD6-88DBA29ECB93}
+	EndGlobalSection
+EndGlobal
