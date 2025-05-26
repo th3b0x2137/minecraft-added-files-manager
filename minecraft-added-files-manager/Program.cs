@@ -37,14 +37,14 @@ namespace minecraft_added_files_manager
                     Console.WriteLine("Enter the name of a file: ");
                     fileN = Convert.ToString(Console.ReadLine());
                     fileDes = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\.minecraft\resourcepacks";
-                    
+                    File.Copy(Path.Combine(fileSource, fileN + ".zip"), Path.Combine(fileDes, fileN + ".zip"));
                 }
                 if (fileK == "shadespack")
                 {
                     Console.WriteLine("Enter the name of a file: ");
                     fileN = Convert.ToString(Console.ReadLine());
                     fileDes = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\.minecraft\shaderpacks";
-                    
+                    File.Copy(Path.Combine(fileSource, fileN + ".zip"), Path.Combine(fileDes, fileN + ".zip"));
 
                 }
                 else if(fileK != "mod" && fileK != "texturepack" && fileK != "shadespack")
