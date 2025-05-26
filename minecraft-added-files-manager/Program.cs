@@ -10,11 +10,7 @@ namespace minecraft_added_files_manager
             string fileN;
             string fileDes;
             string fileSource = @"c:\Users\maksy\Downloads";
-            /*
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\.minecraft\mods";
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\.minecraft\resourcepacks";
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\.minecraft\shaderpacks";
-            */
+
             do
             {
                 Console.WriteLine("Select the kind of file you want to import:");
@@ -29,8 +25,6 @@ namespace minecraft_added_files_manager
                     fileN = Convert.ToString(Console.ReadLine());
                     fileDes = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\.minecraft\mods";
                     File.Copy(Path.Combine(fileSource, fileN+ ".jar"), Path.Combine(fileDes, fileN + ".jar"));
-
-
                 }
                 if (fileK == "texturepack")
                 {
@@ -49,10 +43,9 @@ namespace minecraft_added_files_manager
                 }
                 else if(fileK != "mod" && fileK != "texturepack" && fileK != "shadespack")
                 {
-                    Console.WriteLine("Please enter correct file kind");
+                    Console.WriteLine("\nPlease enter correct file kind");
                 }
             } while(fileK != "mod" && fileK != "texturepack" && fileK != "shadespack");
-            Console.ReadLine();
         }
     }
 }
